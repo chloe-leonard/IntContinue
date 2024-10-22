@@ -49,8 +49,8 @@ jobs:
             run: |
                 git merge dev
                 git push origin main 
-            env: 
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            #env: 
+            #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               
     deploy:
         needs: build
